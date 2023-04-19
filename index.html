@@ -6,21 +6,24 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
-      <a class="header__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="to-do">
-      <p class="to-do__block" id="add-task">
+      <a class="header__more-inf" 
+          href="https://goal-life.com/page/method/matrix-eisenhower">
+          Want more details?
+      </a>
+    </header>
+    <section class="to-do">
+      <div class="to-do__block" id="add-task">
         <label class="new-task__label" for="new-task">Add Item</label>
         <div class="new-task__row-wrapper">
           <input id="new-task"class="task new-task task__type_text" type="text">
           <button class="button__add">Add</button>
         </div>
-      </p>
+      </div>
       <h3 class="to-do__block-title">Todo</h3>
-      <ul class="to-do__block" id="incomplete-tasks">
-        <li class="task__block">
+      <div class="to-do__block" id="incomplete-tasks">
+        <div class="task__block">
           <input class="task__type_checkbox" type="checkbox">
           <label class="task task__label">Pay Bills</label>
           <input type="text" class="task task__type_text">
@@ -28,8 +31,8 @@
           <button class="button__delete">
             <img class="icon" src="./remove.svg">
           </button>
-        </li>
-        <li class="task__block task__block_edit-mode">
+        </div>
+        <div class="task__block task__block_edit-mode">
           <input class="task__type_checkbox" type="checkbox">
           <label class="task task__label">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task task__type_text">
@@ -37,11 +40,11 @@
           <button class="button__delete">
             <img class="icon" src="./remove.svg">
           </button>
-        </li>
-      </ul>
+        </div>
+      </div>
       <h3 class="to-do__block-title">Completed</h3>
-      <ul class="to-do__block to-do__block_completed-tasks" id="completed-tasks">
-        <li class="task__block">
+      <div class="to-do__block to-do__block_completed-tasks" id="completed-tasks">
+        <div class="task__block">
           <input class="task__type_checkbox" type="checkbox" checked>
           <label class="task task__label">See the Doctor</label>
           <input type="text" class="task  task__type_text">
@@ -49,9 +52,9 @@
           <button class="button__delete">
             <img class="icon" src="./remove.svg">
           </button>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
